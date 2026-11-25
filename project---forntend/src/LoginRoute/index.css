@@ -1,0 +1,85 @@
+ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+}
+
+.form-container {
+  width: 350px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.form-container label {
+  display: block;
+  text-align: left;
+  align-self: flex-start;
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 8px;
+}
+ 
+
+.loginAccount {
+  width: 100%;
+  height: 42px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.loginAccount:focus {
+  outline: 2px solid #2563eb;
+  border-color: #2563eb;
+}
+
+.form-container button {
+  width: 100%;
+  height: 42px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #1d4ed8;
+}
+
+@media (max-width: 400px) {
+  .form-container {
+    width: 90%;
+    margin: 60px auto;
+  }
+}
+ .account-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #64748b;
+}
+
+.account-link {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.account-link:hover {
+  text-decoration: underline;
+}

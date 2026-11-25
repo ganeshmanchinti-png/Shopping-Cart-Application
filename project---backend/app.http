@@ -1,0 +1,469 @@
+GET http://localhost:3000 
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json 
+
+{
+    "name" : "Ganesh",
+    "email" : "gana@gmail.com",
+    "password" : "123456"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json 
+
+{
+    "name": "ramana",
+    "password" : "7013473360"
+}
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json 
+
+{
+    "name" : "gana",
+    "email" : "munna@gmail.com",
+    "password" : "123456"
+}
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json 
+
+{
+    "name" : "gana",
+    "password" : "123456"
+}
+
+###
+GET http://localhost:3000/profile 
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
+
+###
+GET http://localhost:3000/profile 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtYW5hIiwiaWF0IjoxNzkzMzU3NzI3fQ.yo0hnYkMNTG0YyrlDu0zI5LWHE0TACs-ZzOCvOrwJF0
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+  "category_name": "Electronics",
+  "image_url": "https://res.cloudinary.com/do4r39azg/image/upload/v1793444879/imageElectonics.jpg"
+} 
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Clothing",
+    "image_url": "https://res.cloudinary.com/do4r39azg/image/upload/v1793444879/imageElectonics.jpg"
+}
+
+
+###
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Home"
+}
+
+
+### 
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Sports"
+}
+
+
+### 
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Books"
+}
+
+
+### 
+POST http://localhost:3000/categories
+Content-Type: application/json
+
+{
+    "category_name": "Beauty"
+}
+
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json 
+
+{
+    "product_name":"Samsung Mobile", "description":"Samsung smartphone with 128GB storage", "price":85000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793448589/samsungs25.webp", "category_id":1, "stock":1
+}
+
+
+
+###
+POST http://localhost:3000/products
+Content-Type: application/json 
+
+{
+    "product_name":"white-n-serrsucker-d-shirt", "description":"xl-white-n-serrsucker-d-shirt-texture-yellow-popcorn-for-mens-original-imagzpphp7bsbzvj", "price":700, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609516/xl-white-n-serrsucker-d-shirt-texture-yellow-popcorn-for-mens-original-imagzpphp7bsbzvj.webp", "category_id":2, "stock":10
+}
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"Earnshaw New Holland Skeleton Automatic Analog Watch", "price":25000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793463127/1-tw6a072004a-timex-men-original-imahrrcfzssbhh4n.webp", "category_id":1, "stock":2
+        },
+        {
+            "product_name":"Earnshaw Automatic Analog Watch", "price":25000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793463127/1-sb-4-10050-5-santa-barbara-polo-racquet-club-men-original-imahq6yyaffqjfeh.webp", "category_id":1, "stock":10
+        },
+        {
+            "product_name":"New Holland Skeleton Watch", "price":30000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793463127/1-tw6a072004a-timex-men-original-imahrrcfzssbhh4n.webp", "category_id":1, "stock":5
+        },
+         {
+            "product_name":"Guitar Rosewood Right Hand Orientation", "price":10000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793463127/vip-360-36-inch-blueberry-original-imahk69ys7vemc9y.webp", "category_id":1, "stock":3
+        },
+        {
+            "product_name":"IFB 7 kg with 9 Swirl Wash", "price":13999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793463126/-resized-original-imahrf2euz68wnrp.webp", "category_id":1, "stock":10
+        },
+          {
+            "product_name":"Vivo v80 Pro", "description":"Vivo smartphone with 128GB storage", "price":35999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793462662/vivo_V80.webp", "category_id":1, "stock":2
+        },
+         {
+            "product_name":"Iphone 18 Pro", "description":"Iphone smartphone with 256GB storage", "price":127999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793462663/iphone18.webp", "category_id":1, "stock":2
+        },{
+            "product_name":"Nothing 4a", "description":"Nothing smartphone with 256GB storage", "price":26999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793462663/nothing4a.webp", "category_id":1, "stock":2
+        },
+        {
+            "product_name":"Vivo t5 Pro", "description":"Vivo smartphone with 128GB storage", "price":39999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793462661/vivo_t5.webp", "category_id":1, "stock":2
+        }
+    ]
+}
+
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"laxbon-original", "description":"l-combo-05-laxbon-original-imahhavzzy7zahcd","price":499, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609517/l-combo-05-laxbon-original-imahhavzzy7zahcd.webp", "category_id":2, "stock":9
+        },
+        {
+            "product_name":"bridal-white-gownn","description":"180-s-3-4-sleeve-stitched-hbs-gwn-001-bridal-white-gownn-600-original-imahsf9ygtkjddkm", "price":5000, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609515/180-s-3-4-sleeve-stitched-hbs-gwn-001-bridal-white-gownn-600-original-imahsf9ygtkjddkm.webp", "category_id":2, "stock":10
+        },
+        {
+            "product_name":"diamond-shreeji-enterprse", "description":"l-diamond-shreeji-enterprse-resized-original", "price":299, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609516/l-diamond-shreeji-enterprse-resized-original-imah7hm8jgkndadh.webp", "category_id":2, "stock":5
+        },
+         {
+            "product_name":"T-Shirt", "description":"xl-togrhnful-dp-d144-tripr-resized-original", "price":800, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609515/xl-togrhnful-dp-d144-tripr-resized-original-imahczymfajyhjra.webp", "category_id":2, "stock":5
+        },
+        {
+            "product_name":"lightblue-city", "description":"6-7-years-t-f24-lightblue-city-mars-infiniti-resized-origina", "price":189, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609515/6-7-years-t-f24-lightblue-city-mars-infiniti-resized-original-imahhux4szekvhsv.webp", "category_id":2, "stock":10
+        },
+          {
+            "product_name":"plain-shirt", "description":"xl-plain-shirt-aitavikoverseas-origina", "price":699, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793609515/xl-plain-shirt-aitavikoverseas-original-imah696dd9tyvjkb.webp", "category_id":2, "stock":7
+        },
+         {
+            "product_name":"janasya-gownn", "description":"RIYATANK Printed, Abstract Viscose Rayon Stitched Flared/A-line Gown", "price":26999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1793462663/nothing4a.webp", "category_id":2, "stock":10
+        } 
+    ]
+}
+
+
+///Home Products
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"Coffee Machine, Digital Display 2 Cups", "description":"20-bar pump espresso maker with a digital display, built-in steam frother, and hot-and-cold brewing options for making up to two cups at a time.", "price":12999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794995312/rinaldi-rinaldi-espresso-coffee-machine-digital-display-resized-original-imahkdvd2v7r5rxp.webp", "category_id":3, "stock":40
+        },
+        {
+            "product_name":"Storage Rack for Home", "description":"Cantus Storage Rack for Home, Kitchen and Office Use Plastic Kitchen Trolley (DIY(Do-It-Yourself))","price":499, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994167/0-3-rt-302-cantus-3-original-imahqnugrwuggqkh_1.webp", "category_id":3, "stock":20
+        },
+        {
+            "product_name":"Stainless Steel 2","description":"KPL Kitchenware Utensil Kitchen Rack Stainless Steel 2 Tier Kitchen Rack, Storage Shelf Rack, 2 Layer Storage Rack Steel", "price":220, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994292/double-shelf-kitchen-rack-spice-box-maxtan-original-imahk3vahp6bzzqr.webp", "category_id":3, "stock":60
+        },
+        {
+            "product_name":"3-Shelf Kitchen Storage Rack", "description":"FlatKitch 3-Shelf Kitchen Storage Rack with Wheels Plastic Kitchen Trolley (DIY(Do-It-Yourself))", "price":159, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994484/0-8-2tier-cart-blk-01-savanizon-3-original-imahqckweacygn5s.webp", "category_id":3, "stock":27
+        },
+         {
+            "product_name":"Silver  Holds 24 Pieces", "description":"Kitchenify Empty Cutlery Holder Case (Silver  Holds 24 Pieces)", "price":700, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994682/24-8-cutlery-stand-holder-for-kitchen-and-dinning-hall-spoon-enriched-0-original-imahmhxdpeayzahf.webp", "category_id":3, "stock":30
+        },
+        {
+            "product_name":"Grocery Container", "description":"Homemet Plastic Grocery Container  - 550 ml, 1200 ml, 1600 ml (Pack of 12, Black)", "price":445, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994891/kitchen-containers-combo-500ml-4-pcs-1100ml-4-pcs-1500ml-4-pcs-original-imagzv77hsybucme.webp", "category_id":3, "stock":25
+        },
+          {
+            "product_name":"Preethi Cafe 10 Cups Coffee Maker (Black)", "description":" 450W electric drip coffee maker designed to brew South Indian filter coffee decoction using filter coffee powder.", "price":2999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794995184/-resized-original-imah6kbvhkkpheqg.webp", "category_id":3, "stock":27
+        },
+        {
+            "product_name":"MYOZ Stainless", "description":"MYOZ Stainless Steel Vacuum Double Insulated Tumbler with Lid, Handle & Straw 1200 ml Stainless Steel Bottle (Pack of 1, Off White)", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794995625/1200-stainless-steel-vacuum-double-insulated-tumbler-with-lid-original-imahhyshxhbuedrd.webp", "category_id":3, "stock":40
+        },
+        {
+            "product_name":"Go24 Hot and Cold Water Bottle", "description":"Go24 Hot and Cold Water Bottle ISI Certified Thermosteel flask,Leakproof Bravo-Naruto 980 ml Stainless Steel Flask (Pack of 1, Off White, Red)", "price":179, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794995788/980-hot-and-cold-water-bottle-isi-certified-thermosteel-flask-original-imahs86r7hgsggyp.webp", "category_id":3, "stock":33
+        },
+        {
+            "product_name":"Dewleaf Green Dinner", "description":"NOON Pack of 13 Opalware Dewleaf Green Dinner Set, Crockery Set for Dining & Gifting, Plate & Bowl Dinner Set (Green, Microwave Safe)", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794995953/yes-13-dewleaf-green-dinner-set-crockery-set-for-dining-gifting-enriched-2-original-imahj2yhftpmpmrh.webp", "category_id":3, "stock":35
+        }
+         
+    ]
+}
+
+
+
+///Sports Products
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"BERSACHE Premium Sports", "description":"BERSACHE Premium Sports ,walking,Gym,cricket, Trending White Running Shoes For Men's Walking Shoes For Men (White , 10)", "price":4999, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794996614/7-b-sp-s-9197-7-bersache-white-resized-original-imahjnayzwxt9xfy.webp", "category_id":4, "stock":40
+        },
+        {
+            "product_name":"PRO KVH Lightweight", "description":"PRO KVH Lightweight Cricket Shoes for Men | Rubber Spikes | Outdoor and Field Sports Cricket Shoes For Men (Blue, White , 11)","price":3599, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794996897/8-pkc029-8-0-pro-kvh-white-blue-original-imahjru7b6ztkddh.webp", "category_id":4, "stock":20
+        },
+        {
+            "product_name":"Adventra Men's","description":"Adventra Men's Waterproof Hiking Shoes | Superior Grip | WH1108 | Black Outdoors For Men (Black , 7)", "price":399, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794997042/10-5-ad-m-hs-wh1108-blk-45-10-5-adventra-black-original-imahh2akvfdnj4gv.webp", "category_id":4, "stock":60
+        },
+        {
+            "product_name":"CAMPUS HOOD Sneakers", "description":"everyday casual and light-athletic shoes made by Campus Activewear Ltd. They feature a knitted/mesh upper, a bouncy Phylon midsole, and a cushioned PU foam insole in a dark grey colorway with accent details.", "price":1087, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794997355/10-12-sticker-black-10-hotstyle-white-grey-original-imahs4ueha7duhqg.webp", "category_id":4, "stock":27
+        },
+         {
+            "product_name":"HOTSTYLE FITNESS-BLACK", "description":"HOTSTYLE FITNESS-BLACK-6 Running Shoes For Men (Black , 10)", "price":399, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794994682/24-8-cutlery-stand-holder-for-kitchen-and-dinning-hall-spoon-enriched-0-original-imahmhxdpeayzahf.webp", "category_id":4, "stock":30
+        },
+        {
+            "product_name":"HOTSTYLE Velox-740", "description":"combine a lightweight build with shock-absorbing cushioning for everyday wear, gym sessions, and light running.", "price":445, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794997501/10-11-sticker-grey-10-hotstyle-white-grey-resized-original-imahm22dkg9wu3n9.webp", "category_id":4, "stock":25
+        },
+          {
+            "product_name":"Xtoon Men's Sports", "description":"Xtoon Men's Sports Shoes Men Running Basketball Shoes New Brand Kids Sneakers Outdoor Sneakers For Men (White , 10).", "price":436, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794997692/-original-imahd2paguvrfcsb.webp", "category_id":4, "stock":27
+        },
+        {
+            "product_name":"HOTSTYLE TPU", "description":"HOTSTYLE TPU Running Shoes For Men (White , 10)", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794997896/7-tpu-white-7-hotstyle-white-original-imahpf4n4cs4nhjp.webp", "category_id":4, "stock":40
+        },
+        {
+            "product_name":"HOTSTYLE Running Shoes For Men", "description":"budget-friendly men's sports and running shoes designed mainly for casual wear.", "price":188, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794998767/9-blade-9-hotstyle-black-original-imahzx7ztwznge77.webp", "category_id":4, "stock":33
+        },
+        {
+            "product_name":"GOWIN Grubber Cricket Shoes", "description":"GOWIN Grubber Cricket Shoes | Nylon Fiber Mesh Upper | TPU Toe Protection, Rubber sole Outdoors For Men (White, Blue , 10).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1794998879/5-grubber-cricket-shoes-5-gowin-white-royal-original-imahsr7tnhrxbzg2.webp", "category_id":4, "stock":35
+        }
+         
+    ]
+}
+
+
+
+###
+
+
+####
+
+
+///Books Products
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"RICH DAD POOR DAD", "description":"No1 Bestselling Self Help Motivational Non-Fiction Gift Book, RICH DAD POOR DAD (Paperback, Robert Kiyosaki).", "price":499, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016024/no1-bestselling-self-help-motivational-non-fiction-gift-book-original-imahsfpbfhrkvzwd.webp", "category_id":5, "stock":40
+        },
+        {
+            "product_name":"Rupa Publications", "description":"Rupa Publications India Pvt Ltd Meditations (English, Paperback, Aurelius Marcus).","price":699, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016244/-original-imahjx48exam2yhq.webp", "category_id":5, "stock":20
+        },
+        {
+            "product_name":"Meditations","description":"Goel Prakashan Meditations (Paperback, Marcu Aurelius).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016365/meditations-resized-original-imahfv6dhkkfqcxb.webp", "category_id":5, "stock":60
+        },
+        {
+            "product_name":"If We Were Villains", "description":"M. L. Rio : If We Were Villains (Paperback, M. L. Rio).", "price":1087, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016625/if-we-were-villains-original-imagnw3ggrvdf9ds.webp", "category_id":5, "stock":27
+        },
+         {
+            "product_name":"AI/ML and Data Science", "description":"Bluerose Publishers Pvt. Ltd. Introduction to AI/ML and Data Science (Paperback, Sudhir Reddy Navar).", "price":1099, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016690/introduction-to-ai-ml-and-data-science-original-imaggz5mrtmycfua.webp", "category_id":5, "stock":30
+        },
+        {
+            "product_name":"Rebecca Yarros", "description":"Entangled: Amara The Last Letter Paperback  26 February 2019.", "price":445, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016819/the-last-letter-paperback-26-february-2019-by-rebecca-yarros-resized-original-imahy9nbmkh9jahn.webp", "category_id":5, "stock":25
+        },
+          {
+            "product_name":"Mathematics", "description":"Avichal Publishing Company The New Book of Mathematics-8 (Paperback, M L Aggarwal, Neeraj Raj Jain).", "price":436, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795016980/the-new-book-of-mathematics-8-original-imagnaubgxp9wxzs.webp", "category_id":5, "stock":27
+        },
+        {
+            "product_name":"Artificial Intelligence for Beginners", "description":"Bluerose Publishers Pvt. Ltd. Data Science and Artificial Intelligence for Beginners (Paperback, Dr. D.Venu Gopal)", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795017078/data-science-and-artificial-intelligence-for-beginners-original-imagj6zxqyzvzg2h.webp", "category_id":5, "stock":40
+        },
+        {
+            "product_name":"Artificial Intelligence, Machine Learning and Modern Technology", "description":"Vayu Education Of India AI FOR EVERYONE  - AI for Everyone Book | Artificial Intelligence, Machine Learning and Modern Technology (Paperback, DR. ABHISHEK SAXENA, DR. SHALABH SAXENA )", "price":188, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795017243/ai-for-everyone-original-imahem88a7rbhzzh.webp", "category_id":5, "stock":33
+        },
+        {
+            "product_name":"The Great Alone", "description":"Pan MacMillan The Great Alone (English, Paperback, Hannah Kristin).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795017376/the-great-alone-resized-original-imagv6pqems2xyef.webp", "category_id":5, "stock":35
+        }
+         
+    ]
+}
+
+
+///Personal Products
+
+###
+POST http://localhost:3000/products/bulk
+Content-Type: application/json 
+
+{
+    "products":[
+        {
+            "product_name":"Cetaphil Gentle Skin", "description":"Cetaphil Gentle Skin Cleanser Face Wash (1000 ml).", "price":499, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795017960/-original-imahjz6ygg5wbzbn.webp", "category_id":6, "stock":40
+        },
+        {
+            "product_name":"Garnier Men Acno", "description":"Garnier Men Acno Fight, Salicylic Acid, Repairs Skin & Balances Oils, Anti-Pimple Face Wash (300 g).","price":699, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018073/-original-imahpbxjkzcrqtqs.webp", "category_id":6, "stock":20
+        },
+        {
+            "product_name":"Mamaearth Daily Glow Face","description":"Mamaearth Daily Glow Face Cream With Vitamin C & Turmeric for Skin Illumination (160 g).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018145/160-0-daily-glow-face-cream-with-vitamin-c-turmeric-for-skin-enriched-transparent-original-imahcjsqmpjggshs.webp", "category_id":6, "stock":60
+        },
+        {
+            "product_name":"Streax Professional", "description":"Streax Professional Vitariche Gloss Hair Serum - Vitamin E & Macadamia Oil (115 ml).", "price":1087, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018230/-original-imahex3gveypbgs8.webp", "category_id":6, "stock":27
+        },
+         {
+            "product_name":"Smart Beauty RK Korean Rice Water", "description":"Smart Beauty RK Korean Rice Water Hydrating Face Wash with Gold Body Hair Remover Cream Kit (2 Items in the set).", "price":1099, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018320/rk-korean-rice-water-hydrating-face-wash-with-gold-body-hair-original-imaht3pwspqsybs8.webp", "category_id":6, "stock":30
+        },
+        {
+            "product_name":"indulekha Bringha", "description":"indulekha Bringha Hair Fall Control Shampoo (1000 ml).", "price":445, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018444/-original-imahqf99v5kg38zp.webp", "category_id":6, "stock":25
+        },
+          {
+            "product_name":"DOVE Anti Dandruff Hair", "description":"DOVE Anti Dandruff Hair Shampoo to Prevent Dandruff (1 L).", "price":436, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018537/-original-imagxpf2fq3yndzg.webp", "category_id":6, "stock":27
+        },
+        {
+            "product_name":"PARK AVENUE", "description":"PARK AVENUE Good Morning | Grooming Kit for Men| (7 Items in the set).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018639/good-morning-men-s-grooming-essential-kit-pagmk001101-park-original-imah2vuapk5dktcg.webp", "category_id":6, "stock":40
+        },
+        {
+            "product_name":"meglow Premium Fairness", "description":"meglow Premium Fairness Cream 50 gm + 2 of Men's Fairness Foaming Facewash 70 Gm (3 Items in the set)", "price":188, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018784/70-instant-glow-face-wash-removes-dirt-dark-spots-dead-skin-original-imahbb83genfgtcg.webp", "category_id":6, "stock":33
+        },
+        {
+            "product_name":"Reginald Men", "description":"Reginald Men Kratos Barrier Repair Moisturizer | Oil-Free & Non-Sticky with 10 Actives (50 g).", "price":799, "image_url" : "https://res.cloudinary.com/do4r39azg/image/upload/v1795018837/50-kratos-barrier-repair-moisturizer-oil-free-non-sticky-with-10-original-imahqcghzxfvzmrn.webp", "category_id":6, "stock":35
+        }
+         
+    ]
+}
+
+
+
+
+###
+
+
+GET http://localhost:3000/products  
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtYW5hIiwiaWF0IjoxNzkzMzU3NzI3fQ.yo0hnYkMNTG0YyrlDu0zI5LWHE0TACs-ZzOCvOrwJF0
+
+
+
+###
+GET http://localhost:3000/categories/1/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
+
+
+###
+DELETE http://localhost:3000/products/20/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
+
+###
+PUT http://localhost:3000/products/ratings/bulk
+Content-Type: application/json 
+
+{
+    "ratings" :[
+        {"product_id" : 1,"rating" : 4.3},
+         {"product_id" : 2,"rating" : 4.5},
+          {"product_id" : 3,"rating" : 3.5},
+           {"product_id" : 4,"rating" : 2.5},
+            {"product_id" : 5,"rating" : 4.3},
+             {"product_id" : 6,"rating" : 3.5},
+              {"product_id" : 7,"rating" : 4.7},
+               {"product_id" : 8,"rating" : 3.9},
+                {"product_id" : 9,"rating" : 4.7},
+                 {"product_id" : 10,"rating" : 4.0},
+                  {"product_id" : 11,"rating" : 3.3},
+                   {"product_id" : 12,"rating" : 3.7},
+                    {"product_id" : 13,"rating" : 4.4},
+                     {"product_id" : 14,"rating" : 4.7},
+                      {"product_id" : 15,"rating" : 3.8},
+                       {"product_id" : 16,"rating" : 4.0},
+                        {"product_id" : 17,"rating" : 4.1},
+                         {"product_id" : 18,"rating" : 3.9}
+                           
+
+    ]
+}
+
+
+###
+PUT http://localhost:3000/products/description/bulk
+Content-Type: application/json
+
+{
+  "description": [
+    {
+      "product_id": 18,
+      "description": "A plain grey shirt is a versatile wardrobe staple valued for its neutral, balanced tone and effortless styling flexibility."
+    },
+    {
+      "product_id": 12,
+      "description": "lightweight, breathable, and textured casual or smart-casual button-down made from puckered cotton."
+    },
+    {
+      "product_id": 13,
+      "description": "Laxbon Original shirts are premium, high-quality cotton dress shirts designed for a sharp, sophisticated look with exceptional comfort and durability."
+    },
+    {
+      "product_id": 14,
+      "description": "A bridal white gown is a classic ceremonial dress worn by brides, traditionally symbolizing purity, joy, and new beginnings."
+    },
+    {
+      "product_id": 15,
+      "description": "specializes in a diverse range of vibrant, comfortable, and celebratory kids' wear that seamlessly blends traditional Indian style with modern western designs."
+    }
+    ,
+    {
+        "product_id" : 16,
+        "description": "a specific apparel piece manufactured by TRIPR, an online fashion brand based out of Tiruppur, India."
+    },
+    {
+        "product_id" : 17,
+        "description": "classic round/crew neckline and letter or back prints tailored for a stylish, casual look."
+    },
+    {
+        "product_id" : 18,
+        "description": "A classic XL plain shirt by Aitavik Overseas designed for effortless everyday style and comfort."
+    }
+  ]
+}
+
+
+
+###
+PUT http://localhost:3000/products/1/quantity
+Content-Type: application/json
+
+{
+  "quantity": 50
+}

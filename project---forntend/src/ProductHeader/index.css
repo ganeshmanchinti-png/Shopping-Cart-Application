@@ -1,0 +1,81 @@
+.product-header-container {
+  width: 100%;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.product-header-list-container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.product-header-heading {
+  font-size: 22px;
+  color: #171f46;
+  margin: 0 0 15px;
+}
+
+.product-header-list {
+list-style-type: none;
+padding: 0;
+margin: 0;
+width: 100%;
+}
+
+.product-header-list-item {
+width: 100%;
+ 
+font-size: 15px;
+color: #64748b;
+padding: 10px 0;
+margin: 0;
+text-align: left;
+line-height: 1.5;
+overflow-wrap: break-word;
+cursor: pointer;
+}
+
+.product-header-list-item:hover {
+  color: #0b69ff;
+}
+/* Price Range */
+.price-range-container {
+  width: 100%;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.price-range-heading {
+  font-size: 18px;
+  color: #171f46;
+  margin: 0 0 15px;
+}
+
+.price-range-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #475569;
+  cursor: pointer;
+}
+
+.price-range-checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: #0b69ff;
+}
+
+.price-range-label span {
+  line-height: 1.5;
+}
+
+.price-range-label:hover {
+  color: #0b69ff;
+}

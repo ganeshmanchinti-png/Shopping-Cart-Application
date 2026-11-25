@@ -1,0 +1,108 @@
+
+.wave {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 90px;
+  box-sizing: border-box;
+  gap: 20px;
+  padding: 15px 25px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.wave > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex: 1;
+}
+
+.cartItem-image {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.wave > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity-controller-button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #334155;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-controller-button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.quantity {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  min-width: 20px;
+  text-align: center;
+}
+
+.wave > p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2563eb;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.wave > button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fee2e2;
+  color: #dc2626;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wave > button:hover {
+  background-color: #dc2626;
+  color: white;
+}
+
+@media screen and (max-width: 576px) {
+  .wave {
+    gap: 8px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .cartItem-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+}

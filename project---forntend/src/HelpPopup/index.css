@@ -1,0 +1,79 @@
+
+.help-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: inherit;
+}
+
+.help-popup {
+  position: relative;
+  width: 90vw;
+  max-width: 650px;
+  max-height: 85vh;
+  overflow-y: auto;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  color: #222222;
+}
+
+.help-popup h1 {
+  color: #2874f0;
+  text-align: center;
+}
+
+.help-popup h2 {
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.help-description {
+  text-align: center;
+  color: #666666;
+}
+
+.help-section {
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.help-section h3 {
+  font-size: 16px;
+  color: #2874f0;
+  margin-bottom: 5px;
+}
+
+.help-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+.help-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.help-footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.help-footer button {
+  background-color: #2874f0;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

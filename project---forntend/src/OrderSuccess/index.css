@@ -1,0 +1,138 @@
+.order-success-container {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background-color: #f5f7fa;
+}
+
+.success-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+  width: 75px;
+  height: 75px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcfce7;
+  color: #16a34a;
+  font-size: 45px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.success-card h1 {
+  color: #15803d;
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.success-message {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.order-details {
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.order-details h2 {
+  color: #1e293b;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  border-bottom: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 15px;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.pending-status {
+  color: #d97706;
+  background-color: #fef3c7;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.success-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.continue-shopping,
+.view-orders {
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.continue-shopping {
+  color: #ffffff;
+  background-color: #2563eb;
+}
+
+.continue-shopping:hover {
+  background-color: #1d4ed8;
+}
+
+.view-orders {
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.view-orders:hover {
+  background-color: #eff6ff;
+}
+
+@media screen and (max-width: 480px) {
+  .success-card {
+    padding: 30px 18px;
+  }
+
+  .success-card h1 {
+    font-size: 22px;
+  }
+
+  .success-buttons {
+    flex-direction: column;
+  }
+
+  .continue-shopping,
+  .view-orders {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
