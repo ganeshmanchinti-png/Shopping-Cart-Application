@@ -26,28 +26,34 @@ class Login extends Component {
     const userDetails = { name, email, password };
 
     try {
-      const registerResponse = await fetch("http://localhost:3000/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const registerResponse = await fetch(
+        "https://shopping-cart-backend-71i6.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(userDetails),
         },
-        body: JSON.stringify(userDetails),
-      });
+      );
 
       const registerData = await registerResponse.json();
 
       if (registerResponse.ok) {
         // Registration successful - now login
-        const loginResponse = await fetch("http://localhost:3000/login", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
+        const loginResponse = await fetch(
+          "https://shopping-cart-backend-71i6.onrender.com/login",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name,
+              password,
+            }),
           },
-          body: JSON.stringify({
-            name,
-            password,
-          }),
-        });
+        );
 
         const loginData = await loginResponse.json();
 

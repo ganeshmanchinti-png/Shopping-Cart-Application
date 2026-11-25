@@ -21,12 +21,15 @@ class Orders extends Component {
     const token = Cookies.get("jwt_token");
 
     try {
-      const response = await fetch("http://localhost:3000/orders/history", {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const response = await fetch(
+        "https://shopping-cart-backend-71i6.onrender.com/orders/history",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      });
+      );
 
       const data = await response.json();
 

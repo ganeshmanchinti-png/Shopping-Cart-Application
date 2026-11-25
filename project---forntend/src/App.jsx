@@ -24,7 +24,7 @@ class App extends Component {
   fetchCartItems = async () => {
     const token = Cookies.get("jwt_token");
 
-    const url = "http://localhost:3000/cart";
+    const url = "https://shopping-cart-backend-71i6.onrender.com/cart";
 
     const options = {
       method: "GET",
@@ -72,7 +72,7 @@ class App extends Component {
   addCartItem = async (product) => {
     const token = Cookies.get("jwt_token");
 
-    const url = "http://localhost:3000/cart";
+    const url = "https://shopping-cart-backend-71i6.onrender.com/cart";
     const options = {
       method: "POST",
 
@@ -115,14 +115,17 @@ class App extends Component {
 
     const token = Cookies.get("jwt_token");
 
-    const response = await fetch(`http://localhost:3000/cart/${id}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+    const response = await fetch(
+      `https://shopping-cart-backend-71i6.onrender.com/cart/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ quantity: item.quantity + 1 }),
       },
-      body: JSON.stringify({ quantity: item.quantity + 1 }),
-    });
+    );
 
     if (response.ok) {
       await this.fetchCartItems();
@@ -156,7 +159,7 @@ class App extends Component {
     }
 
     const token = Cookies.get("jwt_token");
-    const url = `http://localhost:3000/cart/${id}`;
+    const url = `https://shopping-cart-backend-71i6.onrender.com/cart/${id}`;
     const options = {
       method: "PUT",
       headers: {
@@ -184,12 +187,15 @@ class App extends Component {
   removeCartItem = async (id) => {
     const token = Cookies.get("jwt_token");
 
-    const response = await fetch(`http://localhost:3000/cart/${id}`, {
-      method: "DELETE",
-      headers: {
-        Authorization: `Bearer ${token}`,
+    const response = await fetch(
+      `https://shopping-cart-backend-71i6.onrender.com/cart/${id}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
       },
-    });
+    );
 
     if (response.ok) {
       await this.fetchCartItems();
@@ -200,12 +206,15 @@ class App extends Component {
     const token = Cookies.get("jwt_token");
 
     try {
-      const response = await fetch("http://localhost:3000/orders", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`,
+      const response = await fetch(
+        "https://shopping-cart-backend-71i6.onrender.com/orders",
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
         },
-      });
+      );
 
       const data = await response.json();
 

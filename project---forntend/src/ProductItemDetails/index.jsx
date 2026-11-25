@@ -53,7 +53,7 @@ class ProductItemDetails extends Component {
     const { match } = this.props;
     const { id } = match.params;
 
-    const url = `http://localhost:3000/products/${id}`;
+    const url = `https://shopping-cart-backend-71i6.onrender.com/products/${id}`;
 
     const options = {
       method: "GET",

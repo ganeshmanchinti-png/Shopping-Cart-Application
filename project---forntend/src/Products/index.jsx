@@ -70,7 +70,7 @@ class Products extends Component {
 
       console.log("JWT Token:", token);
 
-      const url = `http://localhost:3000/products?category_id=${category}&order=${sorted}&search=${searchInput}&min_price=${minPrice}&max_price=${maxPrice}`;
+      const url = `https://shopping-cart-backend-71i6.onrender.com/products?category_id=${category}&order=${sorted}&search=${searchInput}&min_price=${minPrice}&max_price=${maxPrice}`;
 
       const options = {
         method: "GET",
