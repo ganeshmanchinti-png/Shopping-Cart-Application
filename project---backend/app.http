@@ -1,7 +1,7 @@
-GET http://localhost:3000 
+GET https://shopping-cart-backend-71i6.onrender.com 
 
 ###
-POST http://localhost:3000/register
+POST https://shopping-cart-backend-71i6.onrender.com/register
 Content-Type: application/json 
 
 {
@@ -11,7 +11,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/login
+POST https://shopping-cart-backend-71i6.onrender.com/login
 Content-Type: application/json 
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/register
+POST https://shopping-cart-backend-71i6.onrender.com/register
 Content-Type: application/json 
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/login
+POST https://shopping-cart-backend-71i6.onrender.com/login
 Content-Type: application/json 
 
 {
@@ -40,15 +40,15 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:3000/profile 
+GET https://shopping-cart-backend-71i6.onrender.com/profile 
 authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
 
 ###
-GET http://localhost:3000/profile 
+GET https://shopping-cart-backend-71i6.onrender.com/profile 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtYW5hIiwiaWF0IjoxNzkzMzU3NzI3fQ.yo0hnYkMNTG0YyrlDu0zI5LWHE0TACs-ZzOCvOrwJF0
 
 ###
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -57,7 +57,7 @@ Content-Type: application/json
 } 
 
 ###
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -67,7 +67,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 
 ### 
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -85,7 +85,7 @@ Content-Type: application/json
 
 
 ### 
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -94,7 +94,7 @@ Content-Type: application/json
 
 
 ### 
-POST http://localhost:3000/categories
+POST https://shopping-cart-backend-71i6.onrender.com/categories
 Content-Type: application/json
 
 {
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/products
+POST https://shopping-cart-backend-71i6.onrender.com/products
 Content-Type: application/json 
 
 {
@@ -113,7 +113,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/products
+POST https://shopping-cart-backend-71i6.onrender.com/products
 Content-Type: application/json 
 
 {
@@ -121,7 +121,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -157,7 +157,7 @@ Content-Type: application/json
 
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -190,7 +190,7 @@ Content-Type: application/json
 ///Home Products
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -234,7 +234,7 @@ Content-Type: application/json
 ///Sports Products
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -284,7 +284,7 @@ Content-Type: application/json
 ///Books Products
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -327,7 +327,7 @@ Content-Type: application/json
 ///Personal Products
 
 ###
-POST http://localhost:3000/products/bulk
+POST https://shopping-cart-backend-71i6.onrender.com/products/bulk
 Content-Type: application/json 
 
 {
@@ -372,22 +372,22 @@ Content-Type: application/json
 ###
 
 
-GET http://localhost:3000/products  
+GET https://shopping-cart-backend-71i6.onrender.com/products  
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoicmFtYW5hIiwiaWF0IjoxNzkzMzU3NzI3fQ.yo0hnYkMNTG0YyrlDu0zI5LWHE0TACs-ZzOCvOrwJF0
 
 
 
 ###
-GET http://localhost:3000/categories/1/products
+GET https://shopping-cart-backend-71i6.onrender.com/categories/1/products
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
 
 
 ###
-DELETE http://localhost:3000/products/20/
+DELETE https://shopping-cart-backend-71i6.onrender.com/products/20/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FuZXNoIiwiaWF0IjoxNzkzMzU1MDc0fQ.mrEsUrSAXkHuIJxAzOTv5p9tzP0CNY6OZOlk5KBp3hc
 
 ###
-PUT http://localhost:3000/products/ratings/bulk
+PUT https://shopping-cart-backend-71i6.onrender.com/products/ratings/bulk
 Content-Type: application/json 
 
 {
@@ -417,7 +417,7 @@ Content-Type: application/json
 
 
 ###
-PUT http://localhost:3000/products/description/bulk
+PUT https://shopping-cart-backend-71i6.onrender.com/products/description/bulk
 Content-Type: application/json
 
 {
@@ -461,7 +461,7 @@ Content-Type: application/json
 
 
 ###
-PUT http://localhost:3000/products/1/quantity
+PUT https://shopping-cart-backend-71i6.onrender.com/products/1/quantity
 Content-Type: application/json
 
 {

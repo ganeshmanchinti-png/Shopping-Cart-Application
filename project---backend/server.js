@@ -25,7 +25,9 @@ const initializeDBAndServer = async () => {
     await createTables();
 
     app.listen(3000, () => {
-      console.log("Server is Running http://localhost:3000");
+      console.log(
+        "Server is Running https://shopping-cart-backend-71i6.onrender.com",
+      );
     });
   } catch (e) {
     console.log(`DB Error ${e.message}`);
